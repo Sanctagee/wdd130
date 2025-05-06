@@ -3,18 +3,345 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First Web Page</title>
+    <link rel="shortcut icon" href="./image/Gabby Main logo.png" type="image/x-icon">
+    <title>Gabriel's Web Development Journey</title>
+    <style>
+        /* Global Styles */
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --accent-color: #e74c3c;
+            --light-color: #ecf0f1;
+            --dark-color: #2c3e50;
+            --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: var(--font-main);
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .tagline {
+            font-style: italic;
+            font-size: 1.2rem;
+            margin-top: 1rem;
+        }
+        
+        /* Navigation */
+        nav {
+            background-color: var(--dark-color);
+            padding: 1rem 0;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin: 0 1rem;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        
+        nav ul li a:hover {
+            background-color: var(--primary-color);
+        }
+        
+        /* Main Content */
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        
+        section {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        h3 {
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 0.5rem;
+        }
+        
+        h4 {
+            color: var(--primary-color);
+            margin: 1.5rem 0 1rem;
+        }
+        
+        ul {
+            padding-left: 2rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+        
+        /* About Section */
+        .about-content {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        .about-text {
+            flex: 2;
+        }
+        
+        .about-image {
+            flex: 1;
+            text-align: center;
+        }
+        
+        .about-image img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Goals Section */
+        .goals-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        
+        .goal-card {
+            background-color: var(--light-color);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-color);
+            transition: transform 0.3s ease;
+        }
+        
+        .goal-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        /* Interests Section */
+        .interests-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        .interest-item {
+            background-color: var(--light-color);
+            padding: 1rem;
+            border-radius: 6px;
+            flex: 1 1 200px;
+            text-align: center;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+        }
+        
+        footer span {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .social-links {
+            margin-top: 1rem;
+        }
+        
+        .social-links a {
+            color: white;
+            margin: 0 0.5rem;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            color: var(--primary-color);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .about-content {
+                flex-direction: column;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav ul li {
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header><h2>Web Development and Design</h2></header>
-    <main>
-        <h4>Expectations at the end of this course</h4>
+    <header>
+        <h2>Gabriel Chikwendu Nwofoke</h2>
+        <p>Frontend Developer & BYU Pathway Student</p>
+        <p class="tagline">Crafting web experiences that are both beautiful and functional</p>
+    </header>
+    
+    <nav>
         <ul>
-            <li>Responsive Design</li>
-            <li>Tailwind CSS</li>
-            <li>Basics of HTML and CSS</li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#goals">Learning Goals</a></li>
+            <li><a href="#interests">Tech Interests</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
+    </nav>
+    
+    <main>
+        <section id="about">
+            <h3>About My Journey</h3>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm Gabriel Chikwendu Nwofoke, a passionate Frontend Developer currently expanding my skills through the BYU Pathway Worldwide program. My journey in web development is driven by a deep fascination with how code transforms into beautiful, interactive experiences.</p>
+                    <p>Through this WDD130 course, I'm building a strong foundation in modern web technologies. I believe great websites should be accessible to everyone, perform flawlessly, and create meaningful connections with users.</p>
+                    <p>When I'm not coding, you can find me exploring new design trends, contributing to open-source projects, or mentoring other aspiring developers in my community.</p>
+                </div>
+                <div class="about-image">
+                    <img src="./image/gabby.png" alt="Gabriel Chikwendu Nwofoke" width="300" height="300">
+                </div>
+            </div>
+        </section>
+        
+        <section id="goals">
+            <h3>My Web Development Goals</h3>
+            <p>Here's what I'm excited to master through this course and beyond:</p>
+            
+            <div class="goals-grid">
+                <div class="goal-card">
+                    <h4>JavaScript & TypeScript Mastery</h4>
+                    <p>I aim to become highly proficient in JavaScript and TypeScript, understanding advanced concepts like closures, prototypes, async/await, and type systems to build robust applications.</p>
+                </div>
+                
+                <div class="goal-card">
+                    <h4>React Ecosystem</h4>
+                    <p>I'm focused on mastering React, React Native, and related technologies to build interactive UIs and cross-platform mobile applications with reusable components.</p>
+                </div>
+                
+                <div class="goal-card">
+                    <h4>Responsive Design Mastery</h4>
+                    <p>I want to perfect my ability to create websites that provide optimal viewing across all devices. Understanding fluid grids, flexible images, and media queries is crucial for my growth.</p>
+                </div>
+                
+                <div class="goal-card">
+                    <h4>Tailwind CSS Expertise</h4>
+                    <p>I'm particularly interested in mastering Tailwind CSS to build custom designs rapidly while maintaining clean, maintainable code. The utility-first approach fascinates me.</p>
+                </div>
+                
+                <div class="goal-card">
+                    <h4>Core HTML/CSS Foundations</h4>
+                    <p>While I have some experience, I'm eager to solidify my understanding of semantic HTML and modern CSS techniques including Flexbox and Grid layout systems.</p>
+                </div>
+                
+                <div class="goal-card">
+                    <h4>Accessibility Best Practices</h4>
+                    <p>Creating inclusive web experiences is important to me. I'm learning how to implement proper ARIA labels, keyboard navigation, and color contrast ratios.</p>
+                </div>
+                
+                <div class="goal-card">
+                    <h4>Performance Optimization</h4>
+                    <p>I want to understand techniques to make websites load faster - from image optimization to code splitting. Speed creates better user experiences.</p>
+                </div>
+                
+                <div class="goal-card">
+                    <h4>Git Workflow Proficiency</h4>
+                    <p>Professional collaboration requires strong version control skills. I'm practicing branching strategies and pull requests to prepare for team environments.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="interests">
+            <h3>My Technology Interests</h3>
+            <p>These are the areas I'm particularly excited to explore further:</p>
+            
+            <div class="interests-list">
+                <div class="interest-item">
+                    <h4>Python & Django</h4>
+                    <p>Exploring Python's versatility and Django's powerful framework for backend development, including deployment on platforms like Render.</p>
+                </div>
+                
+                <div class="interest-item">
+                    <h4>Mobile Development</h4>
+                    <p>Building native (Kotlin) and cross-platform (Flutter) mobile applications to expand my development capabilities.</p>
+                </div>
+                
+                <div class="interest-item">
+                    <h4>CSS Frameworks</h4>
+                    <p>Tailwind, Bootstrap, and Bulma interest me for their different approaches to styling.</p>
+                </div>
+                
+                <div class="interest-item">
+                    <h4>Design Systems</h4>
+                    <p>Creating reusable component libraries that maintain visual consistency.</p>
+                </div>
+                
+                <div class="interest-item">
+                    <h4>Animation</h4>
+                    <p>Subtle UI animations that enhance user experience without distraction.</p>
+                </div>
+                
+                <div class="interest-item">
+                    <h4>Progressive Web Apps</h4>
+                    <p>Web applications that rival native app experiences.</p>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer><span>&copy; GabbyTech | BYU PathWay Worldwide. | All Rights reserved</span></footer>
+    
+    <footer id="contact">
+        <span>&copy; Gabriel Chikwendu Nwofoke | BYU Pathway Worldwide</span>
+        <span>All Rights Reserved</span>
+        <div class="social-links">
+            <a href="#" aria-label="GitHub">GitHub</a>
+            <a href="#" aria-label="LinkedIn">LinkedIn</a>
+            <a href="#" aria-label="Twitter">Twitter</a>
+            <a href="#" aria-label="Portfolio">Portfolio</a>
+        </div>
+    </footer>
 </body>
 </html>

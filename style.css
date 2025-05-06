@@ -1,0 +1,71 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Header */
+  header {
+    background-color: #0a192f;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+  }
+  
+  /* Hero */
+  .hero {
+    background: url('./image/Gabby Main logo.png') no-repeat center center / cover;
+    color: white;
+    text-align: center;
+    padding: 4rem 1rem;
+    background-color: #007acc;
+  }
+  
+  .hero h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .hero p {
+    font-style: italic;
+  }
+  
+  /* Main Content */
+  main {
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  section {
+    margin-bottom: 2rem;
+  }
+  
+  h3 {
+    color: #007acc;
+    margin-bottom: 0.5rem;
+  }
+  
+  ul {
+    list-style-type: square;
+    margin-left: 1.5rem;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #0a192f;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+  }
+  
