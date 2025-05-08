@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./image/Gabby Main logo.png" type="image/x-icon">
-    <title>GabbbyTech's Web Development Journey</title>
+    <link rel="shortcut icon" href="./images/gabby-main-logo.png" type="image/x-icon">
+    <title>GABRIEL CHIKWENDU NWOFOKE WDD130</title>
     <style>
         /* Global Styles */
         :root {
@@ -38,7 +38,7 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         
-        header h2 {
+        header h1 {
             font-size: 2.5rem;
             margin-bottom: 0.5rem;
         }
@@ -132,7 +132,9 @@
         
         .about-image img {
             max-width: 100%;
-            border-radius: 8px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 50%;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         
@@ -219,19 +221,20 @@
 </head>
 <body>
     <header>
-        <h2>Gabriel Chikwendu Nwofoke</h2>
+        <h1>Gabriel Chikwendu Nwofoke</h1>
         <p>Frontend Developer & BYU Pathway Student</p>
         <p class="tagline">Crafting web experiences that are both beautiful and functional</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#goals">Learning Goals</a></li>
+                <li><a href="#interests">Tech Interests</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     
-    <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#goals">Learning Goals</a></li>
-            <li><a href="#interests">Tech Interests</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    
     
     <main>
         <section id="about">
@@ -243,7 +246,7 @@
                     <p>When I'm not coding, you can find me exploring new design trends, contributing to open-source projects, or mentoring other aspiring developers in my community.</p>
                 </div>
                 <div class="about-image">
-                    <img src="./image/gabby.png" alt="Gabriel Chikwendu Nwofoke" width="300" height="300">
+                    <img src="./images/profile.png" alt="Gabriel Chikwendu Nwofoke" width="250" height="250">
                 </div>
             </div>
         </section>
