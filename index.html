@@ -3,224 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./images/gabby-main-logo.png" type="image/x-icon">
     <title>Gabriel Chikwendu Nwofoke | WDD130</title>
-    <style>
-        /* Global Styles */
-        :root {
-            --primary-color: #3498db;
-            --secondary-color: #2c3e50;
-            --accent-color: #e74c3c;
-            --light-color: #ecf0f1;
-            --dark-color: #2c3e50;
-            --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: var(--font-main);
-            line-height: 1.6;
-            color: #333;
-            background-color: #f9f9f9;
-        }
-        
-        /* ============== Header Styles ======================== */
-        header {
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            color: white;
-            padding: 1rem 0;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-        }
-        
-        .tagline {
-            font-style: italic;
-            font-size: 1.2rem;
-            margin-top: 1rem;
-        }
-        
-        /* Navigation */
-        nav {
-            background-color: var(--dark-color);
-            padding: 1rem 0;
-        }
-        
-        nav ul {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-        }
-        
-        nav ul li {
-            margin: 0 1rem;
-        }
-        
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            padding: 0.5rem 1rem;
-            border-radius: 4px;
-            transition: all 0.3s ease;
-        }
-        
-        nav ul li a:hover {
-            background-color: var(--primary-color);
-        }
-        
-        /* ============= Main Content  ===================*/
-        main {
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 0 2rem;
-        }
-        
-        section {
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            padding: 2rem;
-            margin-bottom: 2rem;
-        }
-        
-        main h1 {
-            color: var(--secondary-color);
-            margin-bottom: 1rem;
-            font-size: 1.8rem;
-            border-bottom: 2px solid var(--primary-color);
-            padding-bottom: 0.5rem;
-        }
-        
-        h4 {
-            color: var(--primary-color);
-            margin: 1.5rem 0 1rem;
-        }
-        
-        ul {
-            padding-left: 2rem;
-        }
-        
-        li {
-            margin-bottom: 0.5rem;
-        }
-        
-        /* =============== About Section ============== */
-        .about-content {
-            display: flex;
-            gap: 2rem;
-            align-items: center;
-        }
-        
-        .about-text {
-            flex: 2;
-            text-align: justify;
-        }
-        
-        .about-image {
-            flex: 1;
-            text-align: center;
-        }
-        
-        .about-image img {
-            max-width: 100%;
-            object-fit: cover;
-            object-position: center;
-            border-radius: 50%;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            /* transform: scaleX(-1); */
-        }
-        
-        /* ================= Goals Section ============== */
-        .goals-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
-            margin-top: 1.5rem;
-        }
-        
-        .goal-card {
-            background-color: var(--light-color);
-            padding: 1.5rem;
-            border-radius: 8px;
-            border-left: 4px solid var(--primary-color);
-            transition: transform 0.3s ease;
-            text-align: justify;
-        }
-        
-        .goal-card:hover {
-            transform: translateY(-5px);
-        }
-        
-        /* ============= Interests Section ============ */
-        .interests-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-        
-        .interest-item {
-            background-color: var(--light-color);
-            padding: 1rem;
-            border-radius: 6px;
-            flex: 1 1 200px;
-            text-align: center;
-        }
-        
-        /* ============= Footer ============ */
-        footer {
-            background-color: var(--dark-color);
-            color: white;
-            text-align: center;
-            padding: 1.5rem 0;
-            margin-top: 2rem;
-        }
-        
-        footer span {
-            display: block;
-            margin-bottom: 0.5rem;
-        }
-        
-        .social-links {
-            margin-top: 1rem;
-        }
-        
-        .social-links a {
-            color: white;
-            margin: 0 0.5rem;
-            font-size: 1.2rem;
-            transition: color 0.3s ease;
-        }
-        
-        .social-links a:hover {
-            color: var(--primary-color);
-        }
-        
-        /* ================ Responsive Design ============== */
-        @media (max-width: 768px) {
-            .about-content {
-                flex-direction: column;
-            }
-            
-            nav ul {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            nav ul li {
-                margin: 0.5rem 0;
-            }
-        }
-    </style>
+    <meta name="description" content="Personal website of Gabriel Chikwendu Nwofoke, Frontend Developer and BYU Pathway student showcasing web development skills and projects.">
+    <meta name="author" content="Gabriel Chikwendu Nwofoke">
+    <link rel="shortcut icon" href="./images/gabby-main-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -236,8 +23,6 @@
             </ul>
         </nav>
     </header>
-    
-    
     
     <main>
         <section id="about">
@@ -335,18 +120,30 @@
                     <h4>Progressive Web Apps</h4>
                     <p>Web applications that rival native app experiences.</p>
                 </div>
+
+                <div class="interest-item">
+                    <h4>AWS Cloud Technologies</h4>
+                    <p>Exploring Amazon Web Services infrastructure including EC2, S3, Lambda, and Amplify to build scalable cloud-native applications and deploy web projects.</p>
+                </div>
             </div>
         </section>
     </main>
+    
+    <!-- New aside element added as per assignment -->
+    <aside>
+        <h2>Nigeria</h2>
+        <img src="./images/nigeria.jpg" alt="Nigeria landscape">
+        <p>Nigeria, officially the Federal Republic of Nigeria, is a country in West Africa. It is the most populous country in Africa and the seventh most populous country in the world. Nigeria borders Niger in the north, Chad in the northeast, Cameroon in the east, and Benin in the west. Nigeria is a federal republic comprising 36 states and the Federal Capital Territory, where the capital, Abuja, is located. The largest city in Nigeria is Lagos, one of the largest metropolitan areas in the world and the second-largest in Africa. Nigeria has a diverse geography, with climates ranging from arid to humid equatorial.</p>
+    </aside>
     
     <footer id="contact">
         <span>&copy; 2025 Gabriel Chikwendu Nwofoke | Nigeria </span>
         <span>All Rights Reserved</span>
         <div class="social-links">
-            <a href="#" aria-label="GitHub">GitHub</a>
+            <a href="https://github.com/Sanctagee" aria-label="GitHub">GitHub</a>
             <a href="#" aria-label="LinkedIn">LinkedIn</a>
-            <a href="#" aria-label="Twitter">Twitter</a>
-            <a href="#" aria-label="Portfolio">Portfolio</a>
+            <a href="https://x.com/gabby_tech001" aria-label="Twitter">Twitter</a>
+            <a href="https://gabbytech-portfolio.vercel.app/" aria-label="Portfolio">Portfolio</a>
         </div>
     </footer>
 </body>
