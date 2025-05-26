@@ -1,0 +1,168 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*  colors and fonts from the site plan documentation defined as variables. */
+:root {
+    --primary-color: #3581B8; /* steel blue */
+    --secondary-color: #EBE9E9; /* platinum */
+    --accent1-color: #F3F8F2; /* mint cream */
+    --accent2-color: #FCB07E; /* sandy brown */
+    --heading-font: 'Poetsen One', sans-serif;
+    --body-font: 'Roboto', sans-serif;
+}
+
+/* General Styles */
+body {
+    font-family: var(--body-font);
+    background-color: var(--secondary-color);
+    color: #333;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--primary-color);
+}
+
+.logo {
+    height: 80px;
+    width: auto;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--accent2-color);
+}
+
+
+header, main, footer {
+  width: 840px;
+  margin: 0 auto;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.hero-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.hero h1 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 3.1rem;
+    text-shadow: 2px 2px 5px #000000b3;
+    margin: 0;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 40px;
+    left: 10%;
+    width: 30%;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.article-img {
+    float: right;
+    width: 45%;
+    margin-left: 1rem;
+    border-radius: 4px;
+}
+
+/* History Section */
+.history {
+    padding: 2rem 4rem;
+    text-align: center;
+    background-color: var(--accent1-color);
+    margin: 2rem 0;
+}
+
+/* Adventure Section */
+.adventure {
+    padding: 2rem;
+    text-align: center;
+}
+
+.adventure h2 {
+    margin-bottom: 2rem;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.gallery img {
+    width: 220px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.socialmedia a {
+    text-decoration: none;
+    margin: 0 0.8rem;
+}
+
+.socialmedia img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s;
+}
+
+.socialmedia img:hover {
+    transform: scale(1.2);
+}
