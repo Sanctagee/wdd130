@@ -181,6 +181,11 @@ aside {
     color: #333;
     text-align: center;
 }
+p {
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
 aside img {
     width: 200px;
     height: auto;
@@ -188,12 +193,6 @@ aside img {
     display: block;
     margin: 0 auto;
 }
-
-p {
-    padding: 0;
-    margin-bottom: 1rem;
-}
-
 /* ============= Footer ============ */
 footer {
     background-color: var(--dark-color);
