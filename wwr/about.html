@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="About Rapid Adventures - Learn about our whitewater rafting company's history, mission, and adventures. Family-owned since 2005 with perfect safety record.">
+    <meta name="description" content="About Rapid Adventures - Learn about our whitewater rafting company's history, mission, and adventures.">
     <meta name="author" content="Gabriel Chikwendu Nwofoke">
     <title>About Us | Rapid Adventures</title>
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -14,38 +13,84 @@
 </head>
 <body>
     <header>
-        <img src="images/logo.png" alt="Rapid Company Logo" class="logo">
+        <img src="images/logo.png" alt="Rapid Adventures Logo" class="logo">
+        <h1>White Water Rafting</h1>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact Us</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
         </nav>
     </header>
     
     <main>
         <div class="hero">
             <img src="images/hero.jpg" alt="Rafting adventure" class="hero-image">
-            <h1>Rapid Adventures</h1>
             <article>
-                <img src="images/happy-client.jpg" alt="Happy client" class="article-img">
-                <p>Our mission is to provide safe yet thrilling whitewater experiences while preserving the natural beauty of our rivers. We combine expert guidance with top-quality equipment to create unforgettable memories.</p>
+                <h2 class="mission">Our Mission</h2>
+                <p>We provide unforgettable whitewater experiences while maintaining the highest safety standards and environmental responsibility.</p>
+                <p>Our expert guides and top-quality equipment ensure thrilling adventures for all skill levels.</p>
             </article>
         </div>
         
         <section class="history">
             <h2>History</h2>
-            <p>Founded in 2005, Rapid Adventures began with a single raft and a passion for river exploration. What started as a small family operation has grown into one of the region's most trusted rafting companies, with over 15,000 satisfied customers and a perfect safety record.</p>
+            <div class="history-content">
+                <div class="history-left">
+                    <p>Rapid Adventures was born in 2005 when founder 
+                        Jake Williams took friends down the Colorado River in a single, 
+                        well-worn raft. What began as weekend adventures soon grew into 
+                        a passion project, with Jake guiding trips every summer 
+                        while working construction during off-seasons.
+                    </p>
+                    <p>The turning point came in 2012 when National Geographic featured 
+                        one of our expeditions, bringing international attention to our 
+                        unique approach that blended extreme sports with environmental education.
+                        That year we expanded operations to three rivers and hired our first full-time guides.
+                    </p>
+                </div>
+                <img src="images/rafting7.jpg" alt="Our early days">
+                <div class="history-right">
+                    <p>Today, Rapid Adventures operates across seven states with a fleet of over 80 rafts 
+                        and 50 certified guides. We've pioneered safety innovations now used industry-wide, 
+                        including our patented rapid-assessment system and eco-friendly raft materials.
+                    </p>
+                    <!-- <p>...to run that first Colorado route, reminding us of our humble beginnings and commitment to authentic river experiences.</p> -->
+                    <p>We're proud to have introduced over 250,000 adventurers to whitewater 
+                        rafting while maintaining a perfect safety record and donating 1% of 
+                        all profits to river conservation efforts. Despite our growth, 
+                        we maintain the same adventurous spirit that started it all.
+                        Every season begins with our original team reuniting ...
+                    </p>
+                </div>
+            </div>
         </section>
         
-        <section class="adventure">
+        <section class="adventures">
             <h2>Adventure Awaits You!</h2>
             <div class="gallery">
-                <img src="images/rafting1.jpg" alt="Beginner's run">
-                <img src="images/rafting2.jpg" alt="Team building">
-                <img src="images/rafting3.jpg" alt="Scenic views">
-                <img src="images/rafting4.jpg" alt="Family fun">
-                <img src="images/rafting5.jpg" alt="Expert rapids">
+                <figure>
+                    <img src="images/rafting1.jpg" alt="Happy Adventurers">
+                    <figcaption>Happy Adventurers</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rafting2.jpg" alt="Big Mallard">
+                    <figcaption>Big Mallard</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rafting3.jpg" alt="Half Day Adventure">
+                    <figcaption>Half Day Adventure</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rafting4.jpg" alt="Family Float">
+                    <figcaption>Family Float</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/rafting5.jpg" alt="Wild Rapids">
+                    <figcaption>Wild Rapids</figcaption>
+                </figure>
             </div>
         </section>
     </main>
