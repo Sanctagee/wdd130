@@ -30,7 +30,7 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-header h2 {
+header h3 {
     font-size: 3rem;
     margin-bottom: 0.5rem;
 }
@@ -85,7 +85,7 @@ section {
     margin-bottom: 2rem;
 }
 
-main h2, main h1 {
+main h2, main h1, main h3 {
     color: var(--secondary-color);
     margin-bottom: 1rem;
     font-size: 1.8rem;
