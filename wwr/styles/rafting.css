@@ -64,7 +64,7 @@ header {
 
 .nav-links a:hover {
     color: var(--accent1-color);
-    background: var(--accent2-color);
+    background: #d68a4d;
     padding: .2rem .7rem;
     border-radius: 20px;
 }
@@ -144,8 +144,9 @@ header {
 
 .form-group label {
     display: block;
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.5rem;
     font-weight: bold;
+    color: #333333;
 }
 
 .form-group input[type="text"],
@@ -153,7 +154,7 @@ header {
 .form-group textarea {
     width: 100%;
     padding: 0.7rem;
-    border: 1px solid #ccc;
+    border: 1px solid var(--primary-color);
     border-radius: 4px;
     font-family: var(--body-font);
 }
@@ -167,8 +168,9 @@ header {
 
 .radio-group label {
     display: inline;
-    font-weight: normal;
+    font-weight: 500;
     margin-left: 0.5rem;
+    color: #333333;
 }
 
 .checkbox-group {
@@ -180,11 +182,16 @@ header {
     margin-right: 0.5rem;
 }
 
+.checkbox-group label{
+    font-size: .8rem;
+    font-weight:600;
+    color: #f72525;
+}
 .submit-btn {
-    background-color: var(--primary-color);
+    background-color: #2a6a9e;
     color: white;
     border: none;
-    padding: 0.8rem 1.5rem;
+    padding: 1rem 2rem;;
     border-radius: 4px;
     cursor: pointer;
     font-weight: bold;
@@ -228,12 +235,12 @@ header {
 .team-members figcaption {
     margin-top: 0.8rem;
     font-weight: bold;
-    color: var(--primary-color);
+    color: #2a6a9e;
 }
 
 .team-members em{
     font-size: .85rem;
-    color: var(--accent2-color);
+    color: #f72525;
 }
 
 /* Footer */
@@ -244,10 +251,17 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 2rem;
-    background-color: var(--primary-color);
+    background-color: #2a6a9e;
     color: white;
 }
 
+footer p, footer a {
+  color: #ffffff;
+}
+
+footer a:hover {
+  color: var(--accent2-color);
+}
 .socialmedia {
     display: flex;
     gap: 1rem;
