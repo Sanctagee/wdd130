@@ -16,7 +16,7 @@
 body {
     font-family: var(--body-font);
     background-color: var(--secondary-color);
-    color: color: #222222;
+    color: #222222;
 }
 
 h2, h3, h4, h5, h6 {
