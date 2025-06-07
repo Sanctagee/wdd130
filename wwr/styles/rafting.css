@@ -16,14 +16,20 @@
 body {
     font-family: var(--body-font);
     background-color: var(--secondary-color);
-    color: #333;
+    color: color: #222222;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
     padding: .5rem 0;
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
+
+h1{
+    color: #ffffff;
+    font-family: var(--heading-font);
+}
+
 .mission{
     color: var(--secondary-color);
     text-align: center;
@@ -55,7 +61,8 @@ header {
 }
 
 .nav-links a {
-    color: white;
+    color: #fff;
+    background-color: var(--primary-color);
     text-decoration: none;
     padding: 0.5rem;
     font-weight: bold;
@@ -63,7 +70,7 @@ header {
 }
 
 .nav-links a:hover {
-    color: var(--accent1-color);
+    color: #FFFFFF !important;
     background: #d68a4d;
     padding: .2rem .7rem;
     border-radius: 20px;
@@ -87,8 +94,9 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 1rem 2rem;
+    background-color: rgba(0, 0, 0, 0.85);
+    text-shadow: 0 1px 3px rgba(0,0,0,0.8); 
+    padding: 1.5rem 2.5rem;
     border-radius: 8px;
     text-align: center;
 }
@@ -138,7 +146,12 @@ header {
     border-radius: 8px;
 }
 
-.contact-container h3, .form-submit{
+.contact-container h3{
+    text-align: center;
+    color: #2a6a9e;
+    margin-bottom: 1.5rem;
+}
+.form-submit{
     text-align: center;
 }
 
@@ -154,9 +167,10 @@ header {
 .form-group textarea {
     width: 100%;
     padding: 0.7rem;
-    border: 1px solid var(--primary-color);
+    border: 1px solid #2a6a9e;
     border-radius: 4px;
     font-family: var(--body-font);
+    background-color: #ffffff;
 }
 .form-group textarea{
     resize: vertical;
@@ -185,7 +199,7 @@ header {
 .checkbox-group label{
     font-size: .8rem;
     font-weight:600;
-    color: #f72525;
+    color: #333333;
 }
 .submit-btn {
     background-color: #2a6a9e;
@@ -235,12 +249,13 @@ header {
 .team-members figcaption {
     margin-top: 0.8rem;
     font-weight: bold;
-    color: #2a6a9e;
+    color: #1e4a6e;
 }
 
 .team-members em{
     font-size: .85rem;
-    color: #f72525;
+    color: #2c1502;
+    font-weight: bold;
 }
 
 /* Footer */
@@ -255,12 +270,15 @@ footer {
     color: white;
 }
 
-footer p, footer a {
+footer a {
   color: #ffffff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 footer a:hover {
-  color: var(--accent2-color);
+  color: #FCB07E;
+  text-decoration: none;
 }
 .socialmedia {
     display: flex;
@@ -271,6 +289,8 @@ footer a:hover {
     width: 32px;
     height: 32px;
     transition: transform 0.3s;
+    /* filter: brightness(0) invert(1);  */
+    opacity: 0.9;
 }
 
 .socialmedia img:hover {
