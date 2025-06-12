@@ -1,3 +1,4 @@
+/* General Styles */
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +20,7 @@ body {
     color: #222222;
 }
 
-h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6, caption {
     padding: .5rem 0;
     font-family: var(--heading-font);
     color: var(--primary-color);
@@ -30,13 +31,13 @@ h1{
     font-family: var(--heading-font);
 }
 
-.mission{
-    color: var(--secondary-color);
-    text-align: center;
-    padding: .6rem 0;
+main{
+    max-width: 840px;
+    margin: 0 auto;
+    width: 100%;
 }
 
-/* Header Grid Layout */
+/* Header Section */
 header {
     max-width: 840px;
     margin: 0 auto;
@@ -53,7 +54,6 @@ header {
     height: auto;
 }
 
-/* Flex Navigation */
 .nav-links {
     display: flex;
     gap: 1.5rem;
@@ -75,6 +75,212 @@ header {
     padding: .2rem .7rem;
     border-radius: 20px;
 }
+
+/* Home Page Styles */
+.hero {
+    position: relative;
+    margin: 0 auto 2rem;
+    max-width: 840px;
+}
+
+.hero img {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    display: block;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1.5rem 3rem;
+    border-radius: 8px;
+    text-align: center;
+    width: 80%;
+    max-width: 800px;
+}
+
+.newsletter {
+    background-color: var(--accent1-color);
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 840px;
+    border-radius: 8px;
+    width: calc(100% - 4rem);
+}
+
+.newsletter h2{
+    text-align: center;
+}
+
+.grid-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 3rem auto;
+    max-width: 840px;
+    padding: 0 2rem;
+}
+
+.grid-item {
+    background-color: var(--accent1-color);
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.grid-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.grid-item img:hover{
+    cursor: pointer;
+    transform: scale(1.08);
+    transition: .3s ease-in-out;
+}
+
+.cta-section {
+    max-width: 840px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #2a6a9e;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.cta-button:hover {
+    background-color: #e09a5f;
+    cursor: pointer;
+}
+
+/* About Page Specific Styles */
+.hero article {
+    position: absolute;
+    bottom: 40px;
+    left: 10%;
+    width: 80%;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.hero article h2 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.mission{
+    color: var(--secondary-color);
+    text-align: center;
+    padding: .6rem 0;
+}
+
+.history {
+    max-width: 840px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+.history h2{
+ text-align: center;
+ margin-bottom: 1.5rem;   
+}
+
+.history-content p{
+    text-align: justify;
+    
+}
+
+.history-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.text-column {
+  flex: 1;
+  min-width: 200px;
+}
+
+.image-column {
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.image-column img {
+  max-width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin: 1rem 0;
+}
+
+.adventures {
+    max-width: 840px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.gallery figure {
+    margin: 0;
+    transition: transform 0.3s;
+}
+
+.gallery figure:hover {
+    transform: translateY(-5px);
+}
+
+.gallery img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.gallery figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
 /* Contact Page Specific Styles */
 .contact-hero {
     max-width: 840px;
@@ -212,9 +418,9 @@ header {
     transition: background-color 0.3s;
 }
 
-.submit-btn:hover {
+/* .submit-btn:hover {
     background-color: #2a6a9e;
-}
+} */
 
 .team {
     max-width: 840px;
@@ -258,7 +464,66 @@ header {
     font-weight: bold;
 }
 
-/* Footer */
+/* Trips Page Styles */
+.packages h1, caption{
+    text-align: center;
+    margin-top: 2rem;
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+.trip-packages {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 1rem auto;
+    max-width: 1000px;
+}
+
+.trip-card {
+    background-color: var(--accent1-color);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: .5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.trip-card a {
+  margin-top: auto;
+}
+
+.trip-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.trip-table {
+    margin: 3rem auto;
+    max-width: 800px;
+    overflow-x: auto;
+}
+
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.trip-table th, .trip-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.trip-table th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Footer Section*/
 footer {
     max-width: 840px;
     margin: 0 auto;
@@ -299,6 +564,7 @@ footer a:hover {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    /* Header */
     header {
         grid-template-columns: 1fr;
         text-align: center;
@@ -308,7 +574,45 @@ footer a:hover {
         justify-content: center;
         flex-wrap: wrap;
     }
+
+    /* Home */
+    .hero h1 {
+        font-size: 1.8rem;
+        padding: 1rem;
+    }
+
+    .hero article {
+        position: static;
+        width: 100%;
+        margin-top: 1rem;
+    }
     
+    /* About Us*/
+    /* .history-content {
+        grid-template-columns: 1fr;
+    } */
+    
+    .history img {
+        grid-column: span 1;
+    }
+    
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .hero img {
+        height: 40vh;
+    }
+
+    .history-content {
+        flex-direction: column;
+    }
+
+    .image-column {
+        order: -1; 
+    }
+    
+    /* Contact Us */
     .contact-container {
         grid-template-columns: 1fr;
     }
@@ -324,5 +628,10 @@ footer a:hover {
     .contact-hero h2 {
         font-size: 1.5rem;
         padding: 0.8rem;
+    }
+
+    /* Our Trips */
+    .trip-packages {
+        grid-template-columns: 1fr;
     }
 }
