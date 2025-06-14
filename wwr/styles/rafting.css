@@ -20,7 +20,7 @@ body {
     color: #222222;
 }
 
-h2, h3, h4, h5, h6, caption {
+h2, h3, h4, h5, h6 {
     padding: .5rem 0;
     font-family: var(--heading-font);
     color: var(--primary-color);
@@ -465,7 +465,7 @@ header {
 }
 
 /* Trips Page Styles */
-.packages h1, caption{
+.packages h2, .trip-table h2{
     text-align: center;
     margin-top: 2rem;
     color: var(--primary-color);
